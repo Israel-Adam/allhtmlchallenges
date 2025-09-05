@@ -4,6 +4,19 @@
     <title>19 - Create a basic HTML form with a dropdown menu</title>
   </head>
   <body>
-    <!-- Create an HTML form that allows users to select one option from a dropdown menu. -->
+    <h1>19 - Create a basic HTML form with a dropdown menu</h1>
+     <form action="/submit" method="post">
+    <label for="Books">Choose your favorite:</label>
+    <select name="Books" id="Books" required>
+      <option value="" disabled selected>-- Select one --</option>
+      <option value="Things Fall a Part">Things Fall a PartHTML</option>
+      <option value="Pride & Prejudice">Pride & Prejudice</option>
+      <option value="The Lord of the Rings">The Lord of the Rings</option>
+      <option value="war and Peace">war and Peace</option>
+    </select>
+    
+    <button type="submit">Submit</button>
+  </form>
+    <!-- create an html form that allows users to select one option from a dropdown menu. -->
   </body>
 </html>

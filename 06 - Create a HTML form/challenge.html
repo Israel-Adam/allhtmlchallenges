@@ -4,7 +4,106 @@
     <title>06 - Create a HTML form</title>
   </head>
   <body>
-   
+   <h1>All Common HTML</h1>
+
+  <form>
+    <fieldset>
+      <legend><strong>Basic</strong></legend>
+      Text (Name): <input type="text" placeholder="Full name"><br>
+      Email: <input type="email" placeholder="user@example.com"><br>
+      Password: <input type="password" placeholder="At least 8 characters"><br>
+      Telephone: <input type="tel" placeholder="+250 7xx xxx xxx"><br>
+      Search: <input type="search" placeholder="Search term"><br>
+      URL: <input type="url" placeholder="https://example.com"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Numbers & Sliders</strong></legend>
+      Number: <input type="number"><br>
+      Range (0–10): <input type="range" min="0" max="10" value="5"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Date & Time</strong></legend>
+      Date: <input type="date"><br>
+      Time: <input type="time"><br>
+      Datetime (local): <input type="datetime-local"><br>
+      Month: <input type="month"><br>
+      Week: <input type="week"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Choices</strong></legend>
+      Radio (Plan): 
+      <input type="radio" name="plan" checked> Basic
+      <input type="radio" name="plan"> Pro
+      <input type="radio" name="plan"> Enterprise<br>
+
+      Checkboxes: 
+      <input type="checkbox"> Subscribe to updates
+      <input type="checkbox"> I agree to the terms<br>
+
+      Select (not input, but common): 
+      <select>
+        <option>Choose...</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Text Areas & Datalists</strong></legend>
+      Textarea:<br>
+      <textarea placeholder="Write something..."></textarea><br>
+      
+      Text with Datalist (Country): 
+      <input list="countries" placeholder="Start typing...">
+      <datalist id="countries">
+        <option value="United States">
+        <option value="Canada">
+        <option value="Germany">
+        <option value="Kenya">
+      </datalist><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Color & Files</strong></legend>
+      <Color:blue> <input type="color"><br>
+      File Upload: <input type="file"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Hidden & Readonly</strong></legend>
+      Read-only: <input type="text" value="INV-000123" readonly><br>
+      Disabled: <input type="text" value="Disabled example" disabled><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Buttons</strong></legend>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button">Plain Button</button>
+    </fieldset>
+  </form>
+
+
+  
+  <h1>06 - Create a HTML form</h1>
+  <form action="/submit" method="post">
+    <label for="username">Username:
+      <input type="text" id="username" name="username">
+    </label>
+    <br><br>
+    <label for="email">Email:
+      <input type="email" id="email" name="email">
+    </label>
+    <br><br>
+    <label for="password">Password:
+      <input type="password" id="password" name="password">
+    </label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
     <!-- Add a form tag to your HTML page.  -->
     <!-- Inside the form tag, add a label tag and set the for attribute to a unique name for your input field.  -->
     <!-- Inside the label tag, add an input tag and set the type attribute to the type of input

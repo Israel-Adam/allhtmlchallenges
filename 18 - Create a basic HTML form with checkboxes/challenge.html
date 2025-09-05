@@ -4,6 +4,42 @@
     <title>18 - Create a basic HTML form with checkboxes</title>
   </head>
   <body>
+     <form action="/submit" method="post">
+    <fieldset>
+      <legend>Cities you would like to visit</legend>
+      <p id="hint">Select one or more options.</p>
+      <label class="option">
+        <input type="checkbox" value="Paris" required />
+        Paris
+      </label>
+
+      <label class="option">
+        <input type="checkbox"  value="Roma" />
+        Roma
+      </label>
+
+      <label class="option">
+        <input type="checkbox"  value="Kigali" />
+        Kigali
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Nairobi" />
+        Nairobi
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Cairo" />
+       Cairo
+      </label>
+
+      <div class="actions">
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+
+</body>
     <!-- Create an HTML form that allows users to select one or more options from a group of checkboxes. -->
   </body>
 </html>
